@@ -1,0 +1,3581 @@
+/* KunKun Font Faces */
+@font-face {
+  font-family: 'KunKun';
+  src: url('../../ARWA WEB/ENGLISH FONTS/KunKun_Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: transparent;
+  z-index: 2;
+  /* margin-bottom: -120px; */
+  
+
+}
+
+.Group2085663270 {
+  width: 100%;
+  max-width: auto;
+  height: 460px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  
+}
+
+.MASCOT-22 {
+  width: 629px;
+  height: 614px;
+  object-fit: contain;
+  position: absolute;
+  right: 40px;
+  bottom: 320px; 
+  
+}
+
+
+.homepage-banner {
+  width: 100%;
+  height: 650px;
+  /* Reduced height slightly to prevent overlap */
+  position: relative;
+  margin-top: -70px;
+  /* Extend banner upward to cover header area */
+  padding-top: 70px;
+  /* Space for content below header */
+  padding-bottom: 10px;
+  /* Added bottom padding for spacing */
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  z-index: 1;
+  position: relative;
+}
+
+.banner-background {
+  width: 100vw;
+  height: 720px;
+  /* Extended height to cover navbar area (650px + 70px navbar) */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(231, 164, 247, 0.24) 0%, rgba(231, 164, 247, 0) 100%);
+  z-index: 999;
+  /* Above body (0) but below navbar (1000) so it shows through transparent navbar */
+  pointer-events: none;
+}
+
+.banner-container {
+  top: 60px;
+  width: 100%;
+  max-width: 1400px;
+  height: 650px;
+  /* Reduced height to match banner */
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  background: none;
+  padding: 0 40px;
+}
+
+/* AddThis Widget - Positioned from Figma (48.45, 23.9) with size 32.61x26.77 */
+/* .banner-addthis-group {
+  position: absolute;
+  left: 48.45px;
+  top: 23.9px;
+  width: 32.61px;
+  height: 26.77px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.banner-addthis-group .addthis-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+} */
+
+/* Mascots Group Container - Centered in the middle of the screen */
+.banner-mascots-group {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 923px;
+  height: 609.71px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Decorative Group - Positioned relative to group container */
+.banner-mascots-group .banner-decorative-group-main {
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  width: 150px;
+  height: 130px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.banner-decorative-group-main .decorative-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+
+}
+
+/* MASCOT-15 - Positioned relative to group container */
+.banner-mascots-group .banner-mascot-15-full {
+  position: absolute;
+  left: 700px;
+  top: 1px;
+  width: 156px;
+  height: 191px;
+  z-index: 8;
+  pointer-events: none;
+}
+
+.banner-mascot-15-full .mascot-15-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+
+}
+
+/* MASCOT-12 - Positioned relative to group container */
+.banner-mascots-group .banner-mascot-12-full {
+  position: absolute;
+  left: 80px;
+  top: 270px;
+  width: 150px;
+  height: 207px;
+  z-index: 8;
+  pointer-events: none;
+}
+
+.banner-mascot-12-full .mascot-12-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* MASCOT-13 - Positioned relative to group container */
+.banner-mascots-group .banner-mascot-13-full {
+  position: absolute;
+  right: 30px;
+  top: 350px;
+  width: 170px;
+  height: 200px;
+  z-index: 8;
+  pointer-events: none;
+
+}
+
+.banner-mascot-13-full .mascot-13-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Responsive adjustments for banner decorative elements */
+/* @media (max-width: 1400px) {
+
+
+  .banner-mascots-group {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+} */
+
+/* @media (max-width: 1200px) { */
+
+/* Scale group to match text size: 70px / 100px = 0.7 */
+/* .banner-mascots-group {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+  .banner-mascots-group .banner-decorative-group-main {
+    left: 58px; 
+    top: -57.6px; 
+  }
+
+} */
+
+/* Tablet size: Scale images proportionally to text (80px text) */
+@media (min-width: 797px) and (max-width: 1200px) {
+
+
+  /* Adjust positions proportionally - no additional scale needed as parent is scaled */
+  .banner-mascots-group .banner-decorative-group-main {
+    left: 153px;
+    top: 10px;
+  }
+
+  .banner-mascots-group .banner-mascot-15-full {
+    left: 650px;
+    top: 20px;
+    max-width: 125px;
+  }
+
+  .banner-mascots-group .banner-mascot-13-full {
+    left: 700px;
+    top: 320px;
+    max-width: 150px;
+  }
+
+}
+
+
+/* Mobile: Hide MASCOT-12 and MASCOT-13, scale others proportionally to text (80px text) */
+@media (min-width: 768px) and (max-width: 797px) {
+  .banner-addthis-group {
+    left: 30px;
+    top: 10px;
+    transform: scale(0.6);
+  }
+
+  .banner-mascots-group .banner-mascot-12-full,
+  .banner-mascots-group .banner-mascot-13-full {
+    display: none;
+
+  }
+
+  /* Scale group container to match text size: 80px / 100px = 0.8 */
+  .banner-mascots-group {
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 738.4px;
+    height: 487.768px;
+  }
+
+  /* Adjust positions - moved up and to the left */
+  .banner-mascots-group .banner-decorative-group-main {
+    left: 10px;
+    top: -95px;
+  }
+
+  .banner-mascots-group .banner-mascot-15-full {
+    left: 605px;
+    top: -90px;
+  }
+}
+
+@media (min-width: 696px) and (max-width: 768px) {
+  .banner-addthis-group {
+    left: 30px;
+    top: 10px;
+    transform: scale(0.6);
+  }
+
+  .banner-mascots-group .banner-mascot-12-full,
+  .banner-mascots-group .banner-mascot-13-full {
+    display: none;
+
+  }
+
+  /* Scale group container to match text size: 80px / 100px = 0.8 */
+  .banner-mascots-group {
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 738.4px;
+    height: 487.768px;
+  }
+
+  /* Adjust positions - moved up and to the left */
+  .banner-mascots-group .banner-decorative-group-main {
+    left: 10px;
+    top: -130px;
+  }
+
+  .banner-mascots-group .banner-mascot-15-full {
+    left: 605px;
+    top: -128px;
+  }
+}
+
+
+@media (min-width:623px) and (max-width: 696px) {
+
+  /* Remove padding from banner container on mobile */
+  .banner-container {
+    padding: 0 15px;
+  }
+
+  /* Hide Empowering Ambitious on mobile */
+  .EmpoweringAmbitious {
+    display: none;
+  }
+
+  .WhereDesignMeetsAmbition {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .banner-addthis-group {
+    left: 30px;
+    top: 10px;
+    transform: scale(0.6);
+  }
+
+  .banner-mascots-group .banner-mascot-12-full,
+  .banner-mascots-group .banner-mascot-13-full {
+    display: none;
+
+  }
+
+  /* Scale group container to match text size: 80px / 100px = 0.8 */
+  .banner-mascots-group {
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 738.4px;
+    height: 487.768px;
+  }
+
+  /* Adjust positions - moved up and to the left */
+  .banner-mascots-group .banner-decorative-group-main {
+    left: 45px;
+    top: -115px;
+
+  }
+
+  .banner-mascots-group .banner-mascot-15-full {
+    left: 570px;
+    top: -110px;
+
+  }
+
+  .heading-text-black {
+    font-size: 70px !important;
+    line-height: 75px !important;
+  }
+
+  .heading-accent {
+    font-size: 70px !important;
+    line-height: 75px !important;
+  }
+}
+
+@media (min-width:551px) and (max-width:624px) {
+
+  /* Remove padding from banner container on mobile */
+  .banner-container {
+    padding: 0 15px;
+  }
+
+  /* Hide Empowering Ambitious on mobile */
+  .EmpoweringAmbitious {
+    display: none;
+  }
+
+  .WhereDesignMeetsAmbition {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+  }
+
+  .banner-addthis-group {
+    left: 30px;
+    top: 10px;
+    transform: scale(0.6);
+  }
+
+  .banner-mascots-group .banner-mascot-12-full,
+  .banner-mascots-group .banner-mascot-13-full {
+    display: none;
+
+  }
+
+
+  /* Scale group container to match text size: 80px / 100px = 0.8 */
+  .banner-mascots-group {
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 738.4px;
+    height: 487.768px;
+  }
+
+  /* Adjust positions - moved up and to the left */
+  .banner-mascots-group .banner-decorative-group-main {
+    left: 115px;
+    top: -90px;
+    width: 65px;
+
+  }
+
+  .banner-mascots-group .banner-mascot-15-full {
+    left: 566px;
+    top: -93px;
+    width: 75px;
+  }
+
+  .heading-text-black {
+    font-size: 60px !important;
+    line-height: 70px !important;
+  }
+
+  .heading-accent {
+    font-size: 60px !important;
+    line-height: 70px !important;
+  }
+}
+
+@media (min-width:333px) and (max-width:550px) {
+  .banner-addthis-group {
+    display: none;
+  }
+
+  .EmpoweringAmbitious {
+    display: none !important;
+  }
+
+  .Group2085663269 {
+    margin-top: 140px !important;
+    margin-bottom: 0 !important;
+    margin-left: max(0px, calc(50px - (550px - 100vw) * 0.2)) !important;
+    margin-right: max(0px, calc(50px - (550px - 100vw) * 0.2)) !important;
+    gap: 20px !important;
+    justify-content: flex-start !important;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: calc(100% - 2 * max(0px, calc(50px - (550px - 100vw) * 0.2))) !important;
+    max-width: 100% !important;
+  }
+
+  .banner-container {
+    padding-top: 50px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+
+  }
+
+  .banner-mascots-group {
+    transform: translate(-50%, -50%) scale(0.8);
+    top: 45% !important;
+  }
+
+  .banner-mascots-group .banner-mascot-12-full,
+  .banner-mascots-group .banner-mascot-13-full {
+    display: none;
+
+  }
+
+  .banner-mascots-group .banner-decorative-group-main {
+    left: 310px !important;
+    top: -8px !important;
+    width: 52px;
+
+  }
+
+  .banner-mascots-group .banner-mascot-15-full {
+    left: 570px;
+    top: -15px;
+    width: 55px;
+  }
+
+  /* Responsive heading width that increases as screen size decreases */
+  /* At 550px: ~75% width, At 300px: ~95% width */
+  .WhereDesignMeetsAmbition {
+    width: calc(75% + (550px - 100vw) * 0.08) !important;
+    max-width: 700px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .heading-text-black {
+    font-size: 35px !important;
+    line-height: 50px !important;
+  }
+
+  .heading-accent {
+    font-size: 35px !important;
+    line-height: 35px !important;
+  }
+
+  /* Decrease font size for description paragraph */
+  .WhetherYouReBuildingFromScratchOrReimaginingYourBrandIMHereToMakeSureYourIdentityFeelsAuthenticStrategicAndUnforgettable {
+    font-size: 12px !important;
+    line-height: 15px !important;
+    width: 70% !important;
+    max-width: 100% !important;
+    padding: 0 15px !important;
+    text-align: center !important;
+  }
+
+  /* Decrease button and action sizes */
+  .Frame85 {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .DiscoverOurServices {
+    font-size: 12px !important;
+    line-height: 10px !important;
+  }
+
+  .RecentWorkRow {
+    font-size: 11px !important;
+  }
+
+  .banner-actions {
+    gap: 5px !important;
+  }
+
+  .RecentWorkRow svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+@media (max-width:333px) {
+
+  .Group2085663269 {
+    margin-top: 200px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    gap: 20px !important;
+    justify-content: flex-start !important;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .WhetherYouReBuildingFromScratchOrReimaginingYourBrandIMHereToMakeSureYourIdentityFeelsAuthenticStrategicAndUnforgettable {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    line-height: 20px !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .Frame85 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+
+  }
+
+  .DiscoverOurServices {
+    font-size: 15px !important;
+    line-height: 12px !important;
+  }
+
+  .banner-mascots-group .banner-mascot-12-full,
+  .banner-mascots-group .banner-mascot-13-full {
+    display: none;
+
+  }
+
+  .banner-mascots-group .banner-decorative-group-main {
+    left: 325px !important;
+    top: 17px !important;
+    width: 40px;
+
+  }
+
+  .banner-mascots-group .banner-mascot-15-full {
+    left: 555px;
+    top: -10px;
+    width: 60px;
+  }
+
+  .WhereDesignMeetsAmbition {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0px;
+    box-sizing: border-box;
+  }
+
+  .heading-text-black {
+    font-size: clamp(40px, 10vw, 30px) !important;
+    line-height: clamp(45px, 14vw, 36px) !important;
+  }
+
+  .banner-container {
+    padding: 0 0px !important;
+  }
+
+  .heading-accent {
+    font-size: clamp(40px, 12vw, 30px) !important;
+    line-height: clamp(45px, 14vw, 36px) !important;
+  }
+
+  .banner-addthis-group {
+    display: none;
+  }
+
+  .EmpoweringAmbitious {
+    display: none !important;
+  }
+}
+
+/* New Group container */
+.Group2085663269 {
+  width: 100%;
+  max-width: 1400px;
+  height: 650px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Tagline with icon container */
+.EmpoweringAmbitious {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  top: 60px;
+}
+
+.EmpoweringAmbitious span {
+  color: #383838;
+  font-size: 18px;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.09px;
+  word-wrap: break-word;
+}
+
+/* Ellipse with thunder icon */
+.Ellipse1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.Thunder1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+/* Main heading */
+.WhereDesignMeetsAmbition {
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+/* "Where Design Meets " - black text */
+.heading-text-black {
+  color: #383838;
+  font-size: 100px;
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  line-height: 108px;
+  word-wrap: break-word;
+  display: inline;
+}
+
+/* Container for the 'n' with mascot */
+.design-n-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* Mascot positioned above the 'n' */
+.mascot-on-n {
+  position: absolute;
+  /* bottom: 100%; */
+  left: 50%;
+  transform: translateX(-50%) scaleX(-1);
+  /* Center horizontally and flip horizontally */
+  width: 100px;
+  height: auto;
+  margin-bottom: -30px;
+  z-index: 10;
+}
+
+/* "Ambition" - pink text */
+.heading-accent {
+  color: #E7A4F7;
+  font-size: 100px;
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  line-height: 108px;
+  word-wrap: break-word;
+  display: inline;
+}
+
+/* Desktop: Ensure 100px font size on large screens and above */
+@media (min-width: 1201px) {
+  .heading-text-black {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 108px;
+  }
+
+  .heading-accent {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 108px;
+  }
+}
+
+/* Mobile: Responsive banner text */
+@media (min-width: 697px) and (max-width: 768px) {
+
+  /* Remove padding from banner container on mobile */
+  .banner-container {
+    padding: 0 15px;
+  }
+
+  /* Hide Empowering Ambitious on mobile */
+  .EmpoweringAmbitious {
+    display: none;
+  }
+
+  .WhereDesignMeetsAmbition {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .heading-text-black {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 96px;
+  }
+
+  .heading-accent {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 96px;
+  }
+}
+
+/* Tablet: Medium screen size */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .heading-text-black {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 88px;
+  }
+
+  .heading-accent {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 88px;
+  }
+}
+
+/* Description */
+.WhetherYouReBuildingFromScratchOrReimaginingYourBrandIMHereToMakeSureYourIdentityFeelsAuthenticStrategicAndUnforgettable {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  color: #383838;
+  font-size: 15px;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0.09px;
+  word-wrap: break-word;
+}
+
+/* Mobile font size for description */
+@media (max-width: 768px) {
+  .WhetherYouReBuildingFromScratchOrReimaginingYourBrandIMHereToMakeSureYourIdentityFeelsAuthenticStrategicAndUnforgettable {
+    font-size: 17px;
+  }
+
+}
+
+/* Actions container - wraps Recent Work and Button */
+.banner-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  padding: 0;
+}
+
+/* Mobile: Stack buttons vertically */
+@media (max-width: 768px) {
+  .banner-actions {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Button and Recent Work container */
+.Frame85 {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background: #0794E2;
+  border-radius: 10px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.Frame85:focus,
+.Frame85:active {
+  outline: none;
+  border: none;
+}
+
+/* Recent Work */
+.RecentWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.RecentWork:focus,
+.RecentWork:active {
+  outline: none;
+}
+
+.RecentWorkRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #383838;
+  font-size: 16px;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+.ArrowRight1 {
+  display: inline-flex;
+}
+
+.Line9 {
+  width: 131px;
+  height: 0;
+  outline: 1.40px #383838 solid;
+  outline-offset: -0.70px;
+}
+
+.Frame85:hover {
+  background: #0678b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(7, 148, 226, 0.3);
+}
+
+.DiscoverOurServices {
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  line-height: 29px;
+  word-wrap: break-word;
+}
+
+
+
+
+
+.homepage-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.homepage h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #383838;
+}
+
+.homepage p {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* Studio Work Section */
+.studio-work-section {
+  width: 100%;
+  padding: 20px 5%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.Group2085663149 {
+  width: 100%;
+  max-width: 1200px;
+  /* Reduced width for equal spacing on both sides */
+  height: 81.85px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.StudioWork {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  color: #383838;
+  font-size: 69px;
+  /* Reduced by 1px */
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  line-height: 72px;
+  word-wrap: break-word;
+  outline: none;
+}
+
+.StudioWork:focus,
+.StudioWork:active {
+  outline: none;
+}
+
+/* Vector decorative elements */
+.Group2085663149 .Vector {
+  position: absolute;
+}
+
+.Group2085663149 .Vector1 {
+  left: 399px;
+  top: 15.52px;
+}
+
+.Group2085663149 .Vector2 {
+  left: 400.86px;
+  top: 25.39px;
+}
+
+.Group2085663149 .Vector3 {
+  left: 415.74px;
+  top: 17.50px;
+}
+
+.Group2085663149 .Vector4 {
+  left: 431.22px;
+  top: 5.70px;
+}
+
+.Group2085663149 .Vector5 {
+  left: 438.67px;
+  top: 7.52px;
+}
+
+.Group2085663149 .Vector6 {
+  left: 446.34px;
+  top: 10.89px;
+}
+
+/* View All Works Button - Desktop */
+.Frame88-desktop {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  border-radius: 10px;
+  outline: 1px #383838 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  min-width: 200px;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+.Frame88-desktop:hover {
+  background: rgba(56, 56, 56, 0.05);
+  transform: translateY(-2px);
+}
+
+.Frame88-desktop:focus,
+.Frame88-desktop:active {
+  outline: 1px #383838 solid;
+  outline-offset: 0;
+}
+
+/* View All Works Button - Mobile */
+.Frame88-mobile {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin: 40px auto 0;
+  border-radius: 10px;
+  outline: 1px #383838 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  min-width: 200px;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.Frame88-mobile:hover {
+  background: rgba(56, 56, 56, 0.05);
+  transform: translateY(-2px);
+}
+
+.Frame88-mobile:focus,
+.Frame88-mobile:active {
+  outline: 1px #383838 solid;
+  outline-offset: 0;
+}
+
+.ViewAllWorks {
+  text-align: center;
+  color: #383838;
+  font-size: 17px;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  word-wrap: break-word;
+  outline: none;
+}
+
+.ViewAllWorks:focus,
+.ViewAllWorks:active {
+  outline: none;
+}
+
+.ViewAllWorks-Link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  outline: none;
+}
+
+.ViewAllWorks-Link:focus,
+.ViewAllWorks-Link:active,
+.ViewAllWorks-Link:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.ViewAllWorks-Link .ArrowRight1 {
+  position: relative;
+  display: inline-flex;
+}
+
+/* Legacy selector for backwards compatibility */
+.Group2085663149 .Frame88 {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  border-radius: 10px;
+  outline: 1px #383838 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  min-width: 200px;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+.Group2085663149 .ViewAllWorks {
+  text-align: center;
+  color: #383838;
+  font-size: 17px;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+.Group2085663149 .ArrowRight1 {
+  position: relative;
+  display: inline-flex;
+}
+
+/* Studio Work Gallery */
+.studio-work-gallery {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto 0;
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Desktop Gallery */
+.studio-work-gallery-desktop {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Mobile Gallery - Carousel Wrapper */
+.studio-work-gallery-mobile-wrapper {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Mobile Gallery - Carousel */
+.studio-work-gallery-mobile {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.mobile-carousel-item {
+  min-width: 100%;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.studio-work-item {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.studio-work-item.expanded {
+  flex: 0 0 50%;
+  width: 50%;
+}
+
+.studio-work-item.collapsed {
+  flex: 0 0 25%;
+  width: 25%;
+}
+
+.studio-work-item:hover {
+  transform: translateY(-5px);
+}
+
+.studio-work-item.collapsed:hover {
+  transform: none;
+}
+
+.studio-work-image {
+  width: 100%;
+  height: 600px;
+  min-height: 600px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.studio-work-item.expanded .studio-work-image {
+  margin-bottom: 20px;
+}
+
+.studio-work-item.collapsed .studio-work-image {
+  margin-bottom: 0;
+}
+
+.studio-work-image .project-image {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  max-width: none;
+}
+
+.studio-work-image img,
+.studio-work-image picture,
+.studio-work-image picture img,
+.studio-work-image video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(231, 164, 247, 0.2) 0%, rgba(147, 162, 253, 0.2) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 18px;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.studio-work-title {
+  color: #383838;
+  font-size: 20px;
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.studio-work-category {
+  color: #666;
+  font-size: 16px;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Responsive gallery */
+@media (max-width: 1024px) {
+  .studio-work-item.expanded {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+
+  .studio-work-item.collapsed {
+    flex: 0 0 25%;
+    width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .studio-work-section {
+    padding: 10px 4%;
+    padding-top: 10px;
+  }
+
+  .StudioWork {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  /* Hide desktop button on mobile */
+  .Frame88-desktop {
+    display: none !important;
+  }
+
+  /* Hide legacy button selector on mobile */
+  .Group2085663149 .Frame88 {
+    display: none !important;
+  }
+
+  /* Show mobile button after gallery */
+  .Frame88-mobile {
+    display: inline-flex;
+  }
+
+  .studio-work-gallery {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+
+  /* Hide desktop gallery on mobile */
+  .studio-work-gallery-desktop {
+    display: none;
+  }
+
+  /* Show mobile carousel */
+  .studio-work-gallery {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .studio-work-gallery-mobile-wrapper {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    touch-action: pan-y;
+  }
+
+  .studio-work-gallery-mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .mobile-carousel-item {
+    min-width: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .mobile-carousel-item .studio-work-image {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .studio-work-item.expanded,
+  .studio-work-item.collapsed {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .studio-work-image {
+    height: 400px;
+  }
+
+  /* Carousel Dots - Mobile */
+  .carousel-dots-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #383838;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+  }
+
+  .carousel-dot:hover {
+    background: rgba(56, 56, 56, 0.2);
+  }
+
+  .carousel-dot.active {
+    background: #383838;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .studio-work-section {
+    padding-top: 0 !important;
+    margin-top: -150px !important;
+  }
+
+  .Group2085663149 {
+    margin-top: 0 !important;
+  }
+
+  .StudioWork {
+    top: 5px !important;
+  }
+}
+
+/* Hide mobile carousel on desktop */
+@media (min-width: 769px) {
+  .studio-work-gallery-mobile-wrapper {
+    display: none !important;
+  }
+
+  .studio-work-gallery-mobile {
+    display: none !important;
+  }
+
+  .carousel-dots-mobile {
+    display: none !important;
+  }
+}
+
+/* Services Section */
+.services-section {
+  width: 100%;
+  padding: 60px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.services-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2%;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.Group2085663182 {
+  width: 167px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.service-button {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 900px;
+  outline: 1px #383838 solid;
+  outline-offset: -1px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.service-button:hover {
+  background: rgba(56, 56, 56, 0.05);
+  transform: translateY(-2px);
+}
+
+.Group2085663182 .Frame88 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Group2085663182 .Frame89 {
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+
+.Group2085663182 .Frame91 {
+  position: absolute;
+  left: 0;
+  top: 120px;
+}
+
+.LogoDesign,
+.BrandingDesign,
+.GraphicsDesign {
+  text-align: center;
+  color: #383838;
+  font-size: 16px;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+.services-content-middle {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  text-align: left;
+  padding: 0;
+  font-family: 'KunKun_Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.DesignIsnTJustWhatWeSeeItSHowWeConnectIHelpPassionateFoundersAndCreativesTurnBigIdeasIntoCohesiveImpactfulVisualsThatSpeakStraightToTheHeartOfTheirAudience {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #383838;
+  font-size: 18px;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.09px;
+  word-wrap: break-word;
+}
+
+.partner-text-black {
+  color: #383838;
+  font-size: 64px;
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  line-height: 72px;
+  word-wrap: break-word;
+  display: inline;
+}
+
+.partner-text-pink {
+  color: #E7A4F7;
+  font-size: 64px;
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  line-height: 72px;
+  word-wrap: break-word;
+  display: inline;
+}
+
+.services-image {
+  flex: 0 0 10%;
+  max-width: 10%;
+  min-width: 100px;
+  width: 10%;
+  height: auto;
+  aspect-ratio: 4/5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.services-image img {
+  transform: scaleX(-1);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Responsive Services Section */
+@media (max-width: 1024px) {
+  .services-container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .DesignIsnTJustWhatWeSeeItSHowWeConnectIHelpPassionateFoundersAndCreativesTurnBigIdeasIntoCohesiveImpactfulVisualsThatSpeakStraightToTheHeartOfTheirAudience {
+    width: 100%;
+    padding: 0;
+  }
+
+  .partner-text-black,
+  .partner-text-pink {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .services-image {
+    flex: 0 0 15%;
+    max-width: 15%;
+    min-width: 100px;
+    width: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 40px 4%;
+  }
+
+  .Group2085663182 {
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .Group2085663182 .Frame88,
+  .Group2085663182 .Frame89,
+  .Group2085663182 .Frame91 {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 15px;
+  }
+
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .DesignIsnTJustWhatWeSeeItSHowWeConnectIHelpPassionateFoundersAndCreativesTurnBigIdeasIntoCohesiveImpactfulVisualsThatSpeakStraightToTheHeartOfTheirAudience {
+    width: 100%;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .partner-text-black,
+  .partner-text-pink {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .services-image {
+    flex: 0 0 15%;
+    max-width: 15%;
+    min-width: 100px;
+    width: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .partner-text-black,
+  .partner-text-pink {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .DesignIsnTJustWhatWeSeeItSHowWeConnectIHelpPassionateFoundersAndCreativesTurnBigIdeasIntoCohesiveImpactfulVisualsThatSpeakStraightToTheHeartOfTheirAudience {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+/* Words from Clients Section */
+.words-from-clients-section {
+  width: 100%;
+  padding: 60px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.WordsFromClients {
+  text-align: center;
+  color: #383838;
+  font-size: 48px;
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  line-height: 52px;
+  word-wrap: break-word;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 60px auto;
+}
+
+/* Vision to Life Section */
+.vision-to-life-section {
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.vision-to-life-container {
+  width: 100%;
+  max-width: 1301px;
+  height: 614px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 43px;
+}
+
+.vision-to-life-content {
+  width: 629px;
+  height: 363.43px;
+  position: relative;
+  margin-top: 39px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.vision-to-life-text {
+  width: 629px;
+  height: auto;
+  color: #383838;
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.1666666666666667em;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.vision-to-life-illustration {
+  position: absolute;
+  left: 234.5px;
+  top: 144px;
+  width: 219.06px;
+  height: 219.43px;
+}
+
+.vision-to-life-illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.vision-to-life-button {
+  position: absolute;
+  left: 0;
+  top: 264px;
+  width: 284px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1.4px solid #383838;
+  border-radius: 110px;
+  background: transparent;
+}
+
+.button-yellow-circle {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 28px;
+  height: 28px;
+  background: #FCA917;
+  border-radius: 50%;
+}
+
+.button-white-circle {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.button-text {
+  position: absolute;
+  left: 53px;
+  top: 15px;
+  color: #383838;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75em;
+  letter-spacing: -0.5%;
+  text-align: left;
+}
+
+.vision-to-life-mascot {
+  position: absolute;
+  left: 672px;
+  top: 0;
+  width: 629px;
+  height: 614px;
+  flex-shrink: 0;
+}
+
+.vision-to-life-mascot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1440px) {
+  .vision-to-life-container {
+    max-width: 100%;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 40px;
+  }
+
+  .vision-to-life-content {
+    width: 100%;
+    max-width: 629px;
+    position: relative;
+    margin-top: 0;
+  }
+
+  .vision-to-life-text {
+    width: 100%;
+    max-width: 629px;
+  }
+
+  .vision-to-life-mascot {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    max-width: 629px;
+    height: auto;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-to-life-section {
+    padding: 60px 20px;
+  }
+
+  .vision-to-life-text {
+    font-size: 36px;
+  }
+
+  .vision-to-life-illustration {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    top: 120px;
+  }
+
+  .vision-to-life-button {
+    width: 100%;
+    max-width: 284px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .vision-to-life-mascot {
+    min-height: 300px;
+  }
+}
+
+/* Overlay for project title & category - only show when expanded */
+.project-info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  padding-bottom: 32px;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.studio-work-item.collapsed .project-info-overlay {
+  display: none;
+}
+
+.studio-work-divider {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.studio-work-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 48px;
+}
+
+.studio-work-case-study {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  outline: none;
+}
+
+.studio-work-case-study:hover {
+  color: #E7A4F7;
+}
+
+.studio-work-case-study:focus,
+.studio-work-case-study:active,
+.studio-work-case-study:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.studio-work-category {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ddd;
+  line-height: 28px;
+}
+
+/* Mission Section - After Studio Work */
+.Group2085663263 {
+  width: 100%;
+  max-width: 1288px;
+  min-height: 500px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: -80px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.Group2085663185 {
+  position: absolute;
+  left: 280px;
+  top: 9px;
+  width: 740px;
+  height: 376px;
+}
+
+.Group2085663184 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 740px;
+  height: 256px;
+}
+
+.WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire {
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: auto;
+  color: #383838;
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 1em;
+  letter-spacing: -1%;
+  text-align: left;
+  word-wrap: break-word;
+  z-index: 10;
+}
+
+.WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire img {
+  width: clamp(50px, 8vw, 80px);
+  height: auto;
+  object-fit: contain;
+  margin-left: 180px;
+}
+
+.visionary-entrepreneurs-pink {
+  color: #E7A4F7;
+}
+
+.DesignIsnTJustWhatWeSeeItSHowWeConnectIHelpPassionateFoundersAndCreativesTurnBigIdeasIntoCohesiveImpactfulVisualsThatSpeakStraightToTheHeartOfTheirAudience {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  width: min(60%, 860px);
+  max-width: 90vw;
+  height: auto;
+  color: #383838;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 1.5em;
+  letter-spacing: 0.5%;
+  text-align: center;
+  word-wrap: break-word;
+  z-index: 10;
+}
+
+.Group2085663029 {
+  position: absolute;
+  left: 600px;
+  top: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
+.icon-button:focus-visible {
+  outline: 2px solid #0794E2;
+  outline-offset: 4px;
+}
+
+.mission-icon-button {
+  min-width: 165px;
+  height: 40px;
+  padding: 0 24px 0 20px;
+  border: 1.4px solid #383838;
+  border-radius: 110px;
+  background: #FFFFFF;
+  color: #383838;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.5%;
+  text-align: center;
+}
+
+.mission-icon-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.mission-icon-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.icon-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission-icon {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #58EFBA;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mission-icon__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+
+.icon-button__text {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.Group2085663182 {
+  position: relative;
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.Frame88-services,
+.Frame89-services,
+.Frame91-services {
+  position: relative;
+  left: auto;
+  top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 24px;
+  width: fit-content;
+  height: fit-content;
+  background: #FFFFFF;
+  border: 1px solid #383838;
+  border-radius: 900px;
+}
+
+.LogoDesign,
+.BrandingDesign,
+.GraphicsDesign {
+  color: #383838;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75em;
+  letter-spacing: -0.5%;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.MASCOT-20 {
+  position: absolute;
+  right: 0;
+  top: 88px;
+  width: 178px;
+  height: 218px;
+  object-fit: contain;
+  transform: scaleX(-1);
+}
+
+.missionsection {
+  margin-bottom: 20px;
+  width: clamp(220px, 80vw, 500px);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 12;
+}
+/* Responsive styles for Mission Section */
+@media (max-width: 1288px) {
+  .Group2085663263 {
+    padding: 60px 24px;
+    gap: clamp(20px, 4vw, 32px);
+  }
+  .missionsection {
+    margin-bottom: clamp(36px, 6vw, 56px);
+    width: clamp(220px, 80vw, 500px);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: clamp(36px, 6vw, 56px);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 12;
+    padding-bottom: clamp(24px, 5vw, 36px);
+  }
+  .missionsection img {
+    margin-bottom: clamp(28px, 5vw, 44px);
+    display: block;
+  }
+  .Group2085663185 {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Group2085663184 {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire {
+    width: 100%;
+    max-width: clamp(350px, 58vw, 720px);
+    font-size: clamp(24px, 7.8vw, 50px);
+    line-height: 1.0;
+    text-align: center;
+
+  }
+
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire img {
+    width: clamp(44px, 8vw, 70px);
+    margin: 0 auto 14px;
+  }
+
+
+
+  .DesignIsnTJustWhatWeSeeItSHowWeConnectIHelpPassionateFoundersAndCreativesTurnBigIdeasIntoCohesiveImpactfulVisualsThatSpeakStraightToTheHeartOfTheirAudience {
+    position: absolute;
+    width: 661.49px;
+    height: 89.57px;
+
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #383838;
+  }
+
+  .MASCOT-20 {
+    right: 20px;
+    width: 140px;
+    height: auto;
+  }
+
+  .Group2085663029 {
+    position: absolute;
+    left: 50%;
+    top: calc(28% + clamp(80px, 12vw, 130px));
+    transform: translate(-50%, -50%);
+  }
+
+  .mission-icon-button {
+    min-width: 220px;
+    height: 44px;
+    padding: 6px 28px 6px 24px;
+  }
+
+  .Group2085663182 {
+    position: absolute;
+    left: 40px;
+    top: 134px;
+    width: 167px;
+    height: 127px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .Frame88-services,
+  .Frame89-services,
+  .Frame91-services {
+    position: absolute;
+    left: 0;
+  }
+
+  .Frame88-services {
+    top: 0;
+  }
+
+  .Frame89-services {
+    top: 58px;
+  }
+
+  .Frame91-services {
+    top: 116px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Group2085663263 {
+    height: auto;
+    max-width: 100%;
+    padding: 48px clamp(16px, 5vw, 24px);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto auto auto;
+    column-gap: clamp(16px, 4vw, 28px);
+    row-gap: clamp(20px, 5vw, 28px);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .missionsection {
+    margin-bottom: clamp(36px, 6vw, 56px);
+    width: clamp(220px, 80vw, 500px);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 12;
+    padding-bottom: clamp(24px, 5vw, 36px);
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+  }
+  .missionsection img {
+    margin-bottom: clamp(28px, 5vw, 44px);
+    display: block;
+  }
+  
+  .Group2085663185,
+  .Group2085663184 {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    max-width: clamp(420px, 66vw, 620px);
+    font-size: clamp(28px, 6.4vw, 44px);
+    line-height: 1.08;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    margin: 0 auto;
+  }
+
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire img {
+    width: clamp(42px, 9vw, 72px);
+    height: auto;
+    margin: 0 auto 12px;
+  }
+
+  .DesignIsnTJustWhatWeSeeItSHowWeConnectIHelpPassionateFoundersAndCreativesTurnBigIdeasIntoCohesiveImpactfulVisualsThatSpeakStraightToTheHeartOfTheirAudience {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    max-width: clamp(280px, 62vw, 560px);
+    margin: 0 auto;
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  .Group2085663029 {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: clamp(12px, 3vw, 20px) auto 0;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Group2085663182 {
+    position: relative;
+    left: auto;
+    top: auto;
+    grid-column: 1;
+    grid-row: 4;
+    width: 100%;
+    max-width: clamp(240px, 34vw, 360px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 2vw, 12px);
+    align-items: flex-start;
+    justify-self: stretch;
+  }
+
+  .Frame88-services,
+  .Frame89-services,
+  .Frame91-services {
+    position: relative;
+    left: auto;
+    top: auto;
+    padding: clamp(8px, 2vw, 12px) clamp(14px, 4vw, 22px);
+    border-radius: 64px;
+    width: fit-content;
+    max-width: 100%;
+    justify-content: flex-start;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .Frame91-services {
+    margin-bottom: 0;
+  }
+
+  .MASCOT-20 {
+    position: relative;
+    right: auto;
+    top: auto;
+    grid-column: 2;
+    grid-row: 4;
+    width: clamp(110px, 18vw, 140px);
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 0;
+  }
+
+  .LogoDesign,
+  .BrandingDesign,
+  .GraphicsDesign {
+    font-size: clamp(13px, 2.2vw, 15px);
+    line-height: 1.5em;
+  }
+
+  .mission-icon-button {
+    min-width: clamp(180px, 30vw, 210px);
+    height: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Group2085663263 {
+    min-height: unset;
+    padding: clamp(32px, 6vw, 48px) clamp(16px, 6vw, 20px);
+    gap: clamp(18px, 5vw, 24px);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto auto auto;
+    align-items: start;
+    justify-items: center;
+  }
+ 
+  
+  .missionsection {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: -30px;
+  }
+  .missionsection img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .Group2085663185 {
+    margin: 0;
+    width: 100%;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire {
+    font-size: clamp(24px, 6.2vw, 32px);
+    line-height: 1.12;
+    max-width: clamp(280px, 78vw, 460px);
+    gap: 10px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .Group2085663184 {
+    height: auto;
+  }
+
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire img {
+    width: clamp(34px, 11vw, 58px);
+    max-width: 58px;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+
+  .DesignIsnTJustWhatWeSeeItSHowWeConnectIHelpPassionateFoundersAndCreativesTurnBigIdeasIntoCohesiveImpactfulVisualsThatSpeakStraightToTheHeartOfTheirAudience {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin-bottom: 12px;
+    padding: 0 14px;
+    max-width: clamp(220px, 88vw, 380px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  .Group2085663029 {
+    margin: clamp(12px, 4vw, 16px) 0 0;
+    align-self: flex-start;
+    justify-self: center;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Group2085663182 {
+    margin: clamp(16px, 4vw, 24px) 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(8px, 3vw, 12px);
+    align-items: flex-start;
+    width: 100%;
+    max-width: clamp(160px, 50vw, 240px);
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .Frame88-services,
+  .Frame89-services,
+  .Frame91-services {
+    width: 100%;
+    max-width: clamp(180px, 50vw, 240px);
+    justify-content: flex-start;
+    padding: clamp(8px, 3vw, 12px) clamp(14px, 5vw, 20px);
+    border-radius: clamp(40px, 9vw, 64px);
+    width: fit-content;
+    max-width: 100%;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .MASCOT-20 {
+    width: clamp(110px, 32vw, 150px);
+    margin: clamp(14px, 4vw, 20px) 0 0;
+    align-self: flex-start;
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .LogoDesign,
+  .BrandingDesign,
+  .GraphicsDesign {
+    text-align: left;
+    font-size: clamp(12.5px, 3.2vw, 14px);
+    line-height: 1.5em;
+  }
+
+  .mission-icon-button {
+    width: clamp(180px, 60vw, 240px);
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Group2085663263 {
+    padding: 40px 16px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto auto auto;
+    align-items: flex-start;
+    justify-items: center;
+  }
+
+  .missionsection {
+    width: clamp(180px, 90vw, 400px);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  
+ 
+    justify-self: center;
+    align-self: center;
+  }
+  .missionsection img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    /* font-size: clamp(22px, 8.5vw, 28px);
+    max-width: clamp(200px, 88vw, 300px);
+    text-align: center; */
+    /* We partner with visionary entrepreneurs to craft brands that resonate and inspire */
+
+    width: 370px;
+    left: calc(50% - 370px/2);
+
+    font-family: 'KunKun';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+
+    color: #383838;
+
+
+  }
+
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire img {
+    width: clamp(32px, 18vw, 52px);
+    max-width: 52px;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+
+  .DesignIsnTJustWhatWeSeeItSHowWeConnectIHelpPassionateFoundersAndCreativesTurnBigIdeasIntoCohesiveImpactfulVisualsThatSpeakStraightToTheHeartOfTheirAudience {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    font-size: 15px;
+    padding: 0 12px;
+    max-width: clamp(200px, 92vw, 320px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+
+  .Group2085663029 {
+    margin-top: 16px;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    transform: none;
+    z-index: 15;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+
+  .Frame88-services,
+  .Frame89-services,
+  .Frame91-services {
+    max-width: 100%;
+    padding: 8px 14px;
+  }
+
+  .mission-icon-button {
+    max-width: 190px;
+    font-size: 13.5px;
+    padding: 6px 16px;
+  }
+
+  .Group2085663182 {
+    margin: clamp(12px, 4vw, 20px) 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(6px, 4vw, 10px);
+    align-items: flex-start;
+    width: 100%;
+    max-width: clamp(160px, 70vw, 220px);
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .MASCOT-20 {
+    width: clamp(96px, 28vw, 120px);
+    margin: clamp(12px, 4vw, 18px) 0 0;
+    grid-column: 2;
+    grid-row: 4;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 430px) {
+  .Group2085663263 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+    align-items: flex-start;
+    gap: clamp(14px, 4vw, 20px);
+  }
+
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    font-size: clamp(24px, 9.5vw, 30px);
+    max-width: clamp(220px, 90vw, 320px);
+  }
+
+  .WePartnerWithVisionaryEntrepreneursToCraftBrandsThatResonateAndInspire img {
+    margin-bottom: 10px;
+  }
+
+  .DesignIsnTJustWhatWeSeeItSHowWeConnectIHelpPassionateFoundersAndCreativesTurnBigIdeasIntoCohesiveImpactfulVisualsThatSpeakStraightToTheHeartOfTheirAudience {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    max-width: clamp(200px, 92vw, 300px);
+    padding: 0 clamp(10px, 6vw, 14px);
+  }
+
+  .Group2085663029 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    justify-content: center;
+  }
+
+  .Group2085663182 {
+    grid-column: 1;
+    grid-row: 4;
+    align-items: flex-start;
+    max-width: clamp(150px, 40vw, 200px);
+  }
+
+  .MASCOT-20 {
+    grid-column: 2;
+    grid-row: 4;
+    align-self: flex-start;
+    width: clamp(90px, 35vw, 120px);
+  }
+}
+
+/* Words from Clients Section */
+.WordsFromClientsSection {
+  width: 100%;
+  max-width: 1288px;
+  min-height: 600px;
+  position: relative;
+  margin: 0 auto;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.WordsFromClientsHeading {
+  position: relative;
+  color: #383838;
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1em;
+  letter-spacing: -1%;
+  text-align: center;
+  word-wrap: break-word;
+  margin-bottom: 60px;
+  z-index: 10;
+}
+
+/* ================== Dummy Data Carousel Section ================== */
+.dummy-carousel-section {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.carousel-section-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.carousel-section-title {
+  color: #383838;
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1em;
+  letter-spacing: -1%;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel-wrapper:active {
+  cursor: grabbing;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  gap: 30px;
+}
+
+.carousel-slide {
+  width: calc((100% - 60px) / 3);
+  flex-shrink: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.carousel-slide-short {
+  align-items: center;
+}
+
+.carousel-slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: none;
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  width: 350px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel-card-short {
+  min-height: 360px;
+}
+
+.carousel-card-long {
+  min-height: 420px;
+}
+
+.carousel-review-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-review-text {
+  color: #383838;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.6em;
+  letter-spacing: 0.3%;
+  margin: 0;
+  word-wrap: break-word;
+  flex: 1;
+}
+
+.carousel-client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(56, 56, 56, 0.2);
+}
+
+.carousel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  color: #383838;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border: 2px solid #383838;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-client-name {
+  color: #383838;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5em;
+  word-wrap: break-word;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1.4px solid #383838;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.carousel-dot:hover {
+  background: #E7A4F7;
+  border-color: #E7A4F7;
+}
+
+.carousel-dot.active {
+  background: #383838;
+  border-color: #383838;
+  width: 14px;
+  height: 14px;
+}
+
+.carousel-controls-mobile {
+  display: none;
+}
+
+/* Mobile Responsive Styles for Carousel */
+@media (max-width: 768px) {
+  .dummy-carousel-section {
+    padding: 60px 20px;
+  }
+
+  .carousel-section-title {
+    font-size: 36px;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+  }
+
+  .carousel-container {
+    margin-bottom: 30px;
+  }
+
+  .carousel-wrapper {
+    max-width: 100%;
+  }
+
+  .carousel-slides {
+    gap: 20px;
+    padding: 0;
+  }
+
+  .carousel-slide {
+    width: calc((100% - 20px) / 2);
+    flex: 0 0 calc((100% - 20px) / 2);
+    justify-content: center;
+  }
+
+  .carousel-slide-content {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    margin: 0 auto;
+  }
+
+  .carousel-card-short {
+    min-height: 320px;
+  }
+
+  .carousel-card-long {
+    min-height: 380px;
+  }
+
+  .carousel-review-text {
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+
+  .carousel-client-info {
+    margin-top: 20px;
+    padding-top: 15px;
+    gap: 12px;
+  }
+
+  .carousel-avatar {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .carousel-client-name {
+    font-size: 15px;
+  }
+
+  .carousel-dots {
+    margin-top: 30px;
+    gap: 10px;
+  }
+
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .carousel-dot.active {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .dummy-carousel-section {
+    padding: 50px 16px;
+  }
+
+  .carousel-section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .carousel-slides {
+    gap: 0;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .carousel-slide {
+    width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .carousel-slide-content {
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .carousel-review-text {
+    font-size: 14px;
+  }
+
+  .carousel-client-info {
+    gap: 10px;
+    padding-top: 12px;
+    margin-top: 18px;
+  }
+
+  .carousel-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .carousel-client-name {
+    font-size: 14px;
+  }
+
+  .carousel-dots {
+    margin-top: 24px;
+  }
+
+  .carousel-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .carousel-dot.active {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+/* ================== Contact Section - From Figma ================== */
+/* .Group2085663270 {
+  width: 100%;
+  max-width: 1301px;
+  height: 570px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 43px;
+  background-color: red;
+  z-index: 20;
+  position: relative;
+  
+}
+
+.MASCOT-22 {
+  width: 629px;
+  height: 614px;
+  object-fit: contain;
+  position: absolute;
+  right: 40px;
+  bottom: -120px; 
+  z-index: 30;
+  background-color: blue;
+  
+} */
+
+.Group2085663154 {
+  width: 629px;
+  height: 363.43px;
+  position: relative;
+  margin-top: 39px;
+}
+
+.Group2085663153 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.WhetherYouReJustStartingOutOrReadyForAFullBrandRefreshIdLoveToHearAboutYourProject {
+  width: 629px;
+  height: auto;
+  color: #383838;
+  font-family: 'KunKun', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  font-size: 43px;
+  line-height: 1.1667em;
+  letter-spacing: -1%;
+  text-align: left;
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+
+.ILLUSTRATION-40 {
+  position: absolute;
+  left: 254.5px;
+  top: 120px;
+  width: 150.06px;
+  height: 219.43px;
+  object-fit: contain;
+  transform: rotate(20deg);
+}
+
+.Group2085663029-contact {
+  position: absolute;
+  left: 0;
+  top: 250px;
+  width: 284px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.Rectangle4542-contact {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1.4px solid #383838;
+  border-radius: 110px;
+}
+
+.Ellipse2-contact {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 28px;
+  height: 28px;
+  background: #FCA917;
+  border-radius: 50%;
+}
+
+.Ellipse3-contact {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.LetsBringYourVisionToLife {
+  position: absolute;
+  left: 45px;
+  top: 8px;
+  width: 250px;
+  height: 11px;
+  color: #383838;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75em;
+  letter-spacing: -0.5%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+
+
+@media (max-width: 768px) {
+  .Group2085663270 {
+    width: 100%;
+    max-width: auto;
+    height: 460px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    
+  }
+  
+  .MASCOT-22 {
+    width: 629px;
+    height: 614px;
+    object-fit: contain;
+    position: absolute;
+    right: 40px;
+    bottom: 320px; 
+    
+  }
+  
+
+  .Group2085663154 {
+    width: 100%;
+    max-width: 629px;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .WhetherYouReJustStartingOutOrReadyForAFullBrandRefreshIdLoveToHearAboutYourProject {
+    width: 100%;
+    font-size: 32px;
+    line-height: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  .ILLUSTRATION-40 {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 180px;
+    height: 180px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .Group2085663029-contact {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    max-width: 284px;
+    margin: 30px auto 0;
+  }
+
+ 
+}
+
+@media (max-width: 768px) {
+  .WordsFromClientsSection {
+    height: auto;
+    min-height: 500px;
+    padding: 60px 20px;
+  }
+
+  .WordsFromClientsHeading {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    font-size: 36px;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 484px) {
+
+  .Group2085663154 {
+    width: 100%;
+    max-width: 629px;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .WhetherYouReJustStartingOutOrReadyForAFullBrandRefreshIdLoveToHearAboutYourProject {
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'KunKun_Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 500;
+  }
+
+  .ILLUSTRATION-40 {
+    display: none;
+  }
+
+  .Group2085663029-contact {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    max-width: 284px;
+    margin: 30px auto 0;
+  }
+
+  .LetsBringYourVisionToLife {
+    font-size: 14px;
+    height: auto;
+    top: 10px;
+  }
+
+  /* Make parent relative and hide overflowing parts */
+  .Group2085663270 {
+    flex-direction: column;
+    height: 520px;
+    /* keep desired height */
+    padding: 40px 20px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    /* hide parts of child that go beyond */
+  }
+
+  .MASCOT-22 {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    z-index: 5550;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 430px) {
+  .dummy-carousel-section {
+    padding: 50px 16px;
+  }
+
+  .carousel-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .carousel-wrapper {
+    cursor: default;
+    width: 100%;
+  }
+
+  .carousel-slides {
+    gap: 16px;
+    justify-content: flex-start;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .carousel-slide {
+    width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .carousel-slide-content {
+    max-width: 320px;
+    width: 100%;
+    margin: 0;
+    padding: 24px 24px 24px 20px;
+  }
+
+  .carousel-dots {
+    display: none;
+  }
+
+  .carousel-controls-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    margin-top: 24px;
+    padding: 0 20px;
+  }
+
+  .carousel-arrow-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1.4px solid #383838;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #383838;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+
+  .carousel-arrow-button:active {
+    background: #383838;
+    color: #FFFFFF;
+  }
+
+  .carousel-arrow-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .carousel-progress-wrapper {
+    flex: 1;
+    max-width: 180px;
+    width: 100%;
+  }
+
+  .carousel-progress-bar {
+    width: 100%;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(56, 56, 56, 0.2);
+    overflow: hidden;
+  }
+
+  .carousel-progress-fill {
+    height: 100%;
+    background: #383838;
+    border-radius: inherit;
+    transition: width 0.4s ease;
+  }
+}
+.Group2085663182 {
+    position: absolute;
+    left: 40px;
+    top: 134px;
+    width: 167px;
+    height: 127px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  

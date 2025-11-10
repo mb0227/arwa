@@ -1,0 +1,876 @@
+/* Basic Resets and Body Styling */
+@font-face {
+  font-family: "KunKun_Bold"; /* Give a name to use in font-family */
+  src: url("../../ARWA WEB/ENGLISH FONTS/KunKun_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KunKun_Light"; /* Give a name to use in font-family */
+  src: url("../../ARWA WEB/ENGLISH FONTS/KunKun_Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KunKun_Regular"; /* Give a name to use in font-family */
+  src: url("../../ARWA WEB/ENGLISH FONTS/KunKun_Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f7f7f7; /* Light background as in the image */
+  color: #333;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px 40px 20px;
+  text-align: center;
+}
+
+/* Header Styling */
+.portfolio-header {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  padding-top: 150px; /* Increased from 90px */
+  padding-bottom: 100px; /* Added bottom padding */
+  align-items: center;
+  width: 100%;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.header-title {
+  font-size: 100px; /* Reduced from 130px */
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 0;
+  font-family: "KunKun_Bold", sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-text {
+  color: #c988e0; /* Purple color */
+}
+
+.to-the-text {
+  color: #333; /* Dark color */
+}
+
+.good-stuff-text {
+  color: #333; /* Dark color */
+  margin-left: -5px; /* Adjust for slight overlap/kerning as in image */
+}
+
+.brain-icon-top-right {
+  position: absolute;
+  top: 65px;
+  right: max(14%, 20px); /* Adjust position with minimum safe margin */
+  width: clamp(160px, 8vw, 80px); /* Responsive size */
+  height: auto;
+  transform: scaleX(-1); /* Flips image horizontally */
+  z-index: 1;
+}
+
+.brain-icon-bottom-left {
+  position: absolute;
+  top: 250px; /* Adjust position relative to "good stuff" */
+  left: max(20%, 20px); /* Adjust position with minimum safe margin */
+  width: clamp(120px, 10vw, 100px); /* Responsive size */
+  height: auto;
+  z-index: 1;
+}
+
+.header-description {
+  max-width: 500px;
+  margin: 0 auto 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000ff;
+  font-weight: 500;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Projects Grid Styling */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(550px, 550px)
+  ); /* Increased width to match card size */
+  gap: 30px; /* Space between cards */
+  justify-content: center;
+  margin-bottom: 80px; /* Added space before the call-to-action section */
+}
+.MASCOT-10{
+    width: 170px;
+    position: absolute;
+    margin-top: 100px;
+   margin-left: -700px;
+    z-index:1;
+    transform: scaleX(-1);
+  }
+
+  .MASCOT-12{
+    width: 170px;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: -250px;
+    z-index:1;
+    transform: scaleX(-1);
+  }
+  .MASCOT-13{
+    width: 170px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 300px;
+    z-index:1;
+  }
+/* Tablet and smaller screens */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(450px, 450px)
+    ); /* Increased width to match card size */
+    gap: 25px;
+  }
+
+  .project-card {
+    width: 450px; /* Increased width */
+    height: 450px; /* Increased height to match width */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 500px; /* Increased max width for single column */
+    height: 500px; /* Increased height */
+    margin: 10px auto; /* Center the card */
+  }
+}
+
+/* Project Card Styling */
+.project-card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 15px; /* Rounded corners */
+  overflow: visible; /* Changed from hidden to visible so text shows */
+  text-align: left;
+  display: flex; /* Use flexbox for image and text alignment */
+  flex-direction: column;
+  margin: 10px; /* Added margin around cards */
+  aspect-ratio: 1; /* Make cards square */
+  width: 550px; /* Increased width */
+  height: 550px; /* Increased height to match width */
+  max-width: 100%;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: 60%; /* Limit image to 60% of card height */
+  flex-shrink: 1;
+  object-fit: cover; /* Cover the area, cropping if necessary */
+  display: block;
+  border-radius: 20px; /* Rounded rectangle effect */
+  box-shadow: none; /* Remove shadow from image */
+}
+
+.project-info {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: 0;
+  overflow: visible;
+}
+
+.project-info h3 {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 0; /* Removed bottom margin */
+  color: #333;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px; /* Reduced from 20px */
+  line-height: 1.5;
+}
+
+.view-project-link {
+  display: inline-flex; /* To align arrow with text */
+  align-items: center;
+  justify-content: end;
+  color: #181818ff; /* Purple link color */
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid #181818ff;
+}
+
+.project-info-text {
+  flex-grow: 1;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 8px; /* Reduced gap between description and link */
+}
+
+@media (max-width: 768px) {
+  .project-info-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px; /* Reduced from 15px */
+  }
+}
+
+.view-project-link:hover {
+  color: #c988e0; /* Slightly darker purple on hover */
+}
+
+.view-project-link .arrow {
+  margin-left: 8px;
+  font-size: 18px; /* Slightly larger arrow */
+}
+
+/* Call to Action Section Styling */
+.call-to-action-section {
+  margin-top: 0px;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.call-to-action-title {
+  font-size: 48px; /* Adjust to match the image */
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  color: #333;
+  font-family: "KunKun_Bold", sans-serif;
+}
+
+.enquire-now-button {
+  background-color: transparent;
+  border: 2px solid #333; /* Dark border */
+  color: #333;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px; /* Pill shape */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.enquire-now-button:hover {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.enquire-now-button .arrow {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+/* Loading and No Projects Message */
+.loading-message,
+.no-projects-message {
+  font-size: 18px;
+  color: #888;
+  margin-top: 50px;
+}
+.kunkun-regular {
+  font-family: "KunKun_Regular", sans-serif;
+}
+/* Media Queries for Responsiveness */
+
+/* Tablet (1024px and below) */
+@media (max-width: 1024px) {
+  .portfolio-container {
+    padding: 90px 0 20px 0;
+  }
+
+  .portfolio-header {
+    margin-top: 0;
+    padding-top: 90px; /* Increased from 30px */
+    padding-bottom: 60px; /* Added bottom padding */
+    margin-bottom: 0;
+    transform: scale(1); /* Increased from 0.9 */
+    transform-origin: top center;
+  }
+
+  .header-title {
+    font-size: 90px; /* Reduced from 117px */
+    line-height: 1.1;
+    margin-bottom: 0;
+  }
+
+  .brain-icon-top-right {
+    width: 72px; /* 80px * 0.9 */
+    top: 30px;
+    right: max(8%, 10px);
+  }
+
+  .brain-icon-bottom-left {
+    width: 90px; /* 100px * 0.9 */
+    top: 180px;
+    left: max(14%, 10px);
+  }
+
+  .header-description {
+    font-size: 16.2px; /* 18px * 0.9 */
+    max-width: 450px; /* 500px * 0.9 */
+    margin: 0 auto 0;
+    padding: 0;
+  }
+
+  .call-to-action-title {
+    font-size: 42px;
+  }
+}
+
+/* Tablet Portrait (768px and below) */
+@media (max-width: 768px) {
+  .portfolio-container {
+    padding: 50px 0 15px 0;
+  }
+
+  .portfolio-header {
+    margin-top: 0;
+    padding-top: 60px; /* Increased from 25px */
+    padding-bottom: 50px; /* Added bottom padding */
+    margin-bottom: 0;
+    transform: scale(0.85); /* Increased from 0.7 */
+    transform-origin: top center;
+    overflow: visible;
+  }
+
+  .header-title {
+    font-size: 70px; /* Reduced from 91px */
+    line-height: 1.1;
+    margin-bottom: 0;
+    font-family: "KunKun_Bold", sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .welcome-text,
+  .to-the-text,
+  .good-stuff-text {
+    display: inline-block;
+  }
+
+  .good-stuff-text {
+    margin-left: -5px; /* Maintain same kerning */
+  }
+
+  .brain-icon-top-right {
+    width: 56px; /* 80px * 0.7 */
+    top: 20px;
+    right: max(8%, 10px);
+    display: block;
+  }
+
+  .brain-icon-bottom-left {
+    width: 70px; /* 100px * 0.7 */
+    top: 140px;
+    left: max(14%, 10px);
+    display: block;
+  }
+
+  .header-description {
+    font-size: 13px; /* Minimum readable size */
+    max-width: 350px; /* 500px * 0.7 */
+    margin: 0 auto 0;
+    padding: 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 60px;
+  }
+
+  .project-card {
+    border-radius: 12px;
+    margin: 10px; /* Added margin around cards */
+    aspect-ratio: 1; /* Keep cards square */
+    width: 100%;
+    max-width: 450px; /* Increased max width */
+    height: 450px; /* Increased height to match width */
+    margin: 10px auto; /* Center the card */
+    overflow: visible; /* Ensure text is visible */
+  }
+
+  .project-image {
+    height: auto;
+    min-height: 0;
+    flex-shrink: 1;
+    border-radius: 12px;
+  }
+
+  .project-info {
+    padding: 20px;
+    flex-shrink: 0;
+    display: flex;
+    overflow: visible;
+  }
+
+  .project-info h3 {
+    font-size: 28px; /* Increased from 22px for mobile */
+    margin-bottom: 0; /* Removed bottom margin */
+  }
+
+  .project-info p {
+    font-size: 15px;
+    margin-bottom: 8px; /* Reduced spacing */
+  }
+
+  .view-project-link {
+    font-size: 15px;
+  }
+
+  .call-to-action-section {
+    margin-top: 60px;
+    padding: 40px 15px;
+  }
+
+  .call-to-action-title {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+
+  .enquire-now-button {
+    padding: 13px 28px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .portfolio-container {
+    padding: 40px 0 90px 0;
+    
+  }
+  .portfolio-header {
+    max-width: 900px;
+    margin-top: 0;
+    padding-top: 90px; /* Increased from 20px */
+    padding-bottom: 0px; /* Added bottom padding */
+    overflow: visible;
+   
+  }
+
+  .header-title {
+    font-size: 50px; /* Reduced from 65px */
+    line-height: 1.1;
+    margin-bottom: 0;
+  }
+  .header-description {
+    font-size: 18px; /* Minimum readable size */
+    max-width: 800px; /* 500px * 0.6 */
+    margin: 0 auto 0;
+    padding: 0;
+  }
+
+  .brain-icon-top-right {
+    top: 60px;
+    right: -1px;
+    width: 70px;
+    display: block;
+  }
+
+  .brain-icon-bottom-left {
+    width: 60px; 
+    top: 140px;
+    left: 34px;
+    display: block;
+  }
+
+  .projects-grid {
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .project-card {
+    border-radius: 10px;
+    margin: 10px; /* Added margin around cards */
+    aspect-ratio: 1; /* Keep cards square */
+    overflow: visible; /* Ensure text is visible */
+    width: 100%;
+    max-width: 350px; /* Increased max width */
+    height: 380px; /* Increased height to match width */
+    margin: 10px auto; /* Center the card */
+  }
+
+  .project-image {
+    height: auto;
+    min-height: 0;
+    flex-shrink: 1;
+    border-radius: 10px;
+  }
+
+  .project-info {
+    padding: 15px;
+    flex-shrink: 0;
+    display: flex;
+    overflow: visible;
+    min-height: 0;
+  }
+
+  .project-info h3 {
+    font-size: 26px; /* Increased from 20px for mobile */
+    margin-bottom: 0; /* Removed bottom margin */
+  }
+
+  .project-info p {
+    font-size: 14px;
+    margin-bottom: 8px; /* Reduced spacing */
+  }
+
+  .view-project-link {
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+
+  .view-project-link .arrow {
+    font-size: 16px;
+  }
+
+  .call-to-action-section {
+    margin-top: 50px;
+    padding: 30px 10px;
+  }
+
+  .call-to-action-title {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  .enquire-now-button {
+    padding: 12px 24px;
+    font-size: 15px;
+    border-width: 1.5px;
+  }
+
+  .enquire-now-button .arrow {
+    font-size: 18px;
+  }
+  .MASCOT-10{
+    width: 60px;
+    position: absolute;
+    margin-top: 138px;
+    margin-left: -260px;
+    z-index:1;
+    transform: scaleX(-1);
+  }
+
+  .MASCOT-12{
+    width: 60px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: -140px;
+    z-index:1;
+    transform: scaleX(-1);
+  }
+  .MASCOT-13{
+    width: 60px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 40px;
+    z-index:1;
+  }
+}
+
+/* Extra small mobile (360px and below) */
+@media (max-width: 360px) {
+  .portfolio-container {
+    padding: 30px 0 10px 0;
+  }
+
+  .portfolio-header {
+    margin-top: 0;
+    padding-top: 40px; /* Increased from 15px */
+    padding-bottom: 30px; /* Added bottom padding */
+    margin-bottom: 0;
+    transform: scale(0.55); /* Increased from 0.45 */
+    transform-origin: top center;
+  }
+
+  .header-title {
+    font-size: 45px; /* Reduced from 58.5px */
+    line-height: 1.1;
+    margin-bottom: 0;
+  }
+
+  .welcome-text,
+  .to-the-text,
+  .good-stuff-text {
+    display: inline-block;
+  }
+
+  .good-stuff-text {
+    margin-left: -5px; /* Maintain same kerning */
+  }
+
+  .brain-icon-top-right {
+    width: 36px; /* 80px * 0.45 */
+    top: 15px;
+    right: max(8%, 10px);
+    display: block;
+  }
+
+  .brain-icon-bottom-left {
+    top: 90px;
+    left: max(14%, 10px);
+    display: block;
+  }
+
+  .project-image {
+    height: auto;
+    min-height: 0;
+    flex-shrink: 1;
+  }
+
+  .project-card {
+    aspect-ratio: 1; /* Keep cards square */
+    overflow: visible; /* Ensure text is visible */
+    width: 100%;
+    max-width: 300px; /* Increased max width */
+    height: 350px; /* Increased height to match width */
+    margin: 10px auto; /* Center the card */
+  }
+
+  .project-image {
+    max-height: 50%; /* Limit image to 60% of card height */
+  }
+
+  .project-info {
+    padding: 15px;
+    flex-shrink: 0;
+    display: flex;
+    overflow: visible;
+    min-height: 0;
+  }
+
+  .project-info h3 {
+    font-size: 24px; /* Increased for extra small mobile */
+    margin-bottom: 0; /* Removed bottom margin */
+  }
+
+  .project-info p {
+    margin-bottom: 8px; /* Reduced spacing */
+  }
+
+  .call-to-action-title {
+    font-size: 20px;
+  }
+
+  .enquire-now-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ================== Contact Section - From Figma ================== */
+.Group2085663336-portfolio {
+  width: 100%;
+  max-width: 1301px;
+  height: 614px;
+  position: relative;
+  margin: 80px auto 0 auto;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 43px;
+}
+
+.Group2085663154-portfolio {
+  width: 629px;
+  height: 363.43px;
+  position: relative;
+  margin-top: 39px;
+}
+
+.Group2085663153-portfolio {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.WhetherYouReJustStartingOutOrReadyForAFullBrandRefreshIdLoveToHearAboutYourProject-portfolio {
+  width: 629px;
+  height: auto;
+  color: #383838;
+  font-family: "KunKun", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.1667em;
+  letter-spacing: -1%;
+  text-align: left;
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+
+.ILLUSTRATION-40-portfolio {
+  position: absolute;
+  left: 234.5px;
+  top: 144px;
+  width: 219.06px;
+  height: 219.43px;
+  object-fit: contain;
+}
+
+.Group2085663029-contact-portfolio {
+  position: absolute;
+  left: 0;
+  top: 264px;
+  width: 284px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.Group2085663029-contact-portfolio:hover {
+  opacity: 0.8;
+}
+
+.Rectangle4542-contact-portfolio {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 284px;
+  height: 40px;
+  background: #ffffff;
+  border: 1.4px solid #383838;
+  border-radius: 110px;
+}
+
+.Ellipse2-contact-portfolio {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 28px;
+  height: 28px;
+  background: #fca917;
+  border-radius: 50%;
+}
+
+.Ellipse3-contact-portfolio {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.LetsBringYourVisionToLife-portfolio {
+  position: absolute;
+  left: 53px;
+  top: 15px;
+  width: 215px;
+  height: 11px;
+  color: #383838;
+  font-family: "Aeonik", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75em;
+  letter-spacing: -0.5%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.MASCOT-22-portfolio {
+  width: 629px;
+  height: 614px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .Group2085663336-portfolio {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .Group2085663154-portfolio {
+    width: 100%;
+    max-width: 629px;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .WhetherYouReJustStartingOutOrReadyForAFullBrandRefreshIdLoveToHearAboutYourProject-portfolio {
+    width: 100%;
+    font-size: 32px;
+    line-height: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  .ILLUSTRATION-40-portfolio {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 180px;
+    height: 180px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .Group2085663029-contact-portfolio {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    max-width: 284px;
+    margin: 30px auto 0;
+  }
+
+  .MASCOT-22-portfolio {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+}

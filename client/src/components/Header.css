@@ -1,0 +1,311 @@
+@font-face {
+  font-family: "KunKun_Bold"; /* Give a name to use in font-family */
+  src: url("../../ARWA WEB/ENGLISH FONTS/KunKun_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent !important;
+  border-bottom: none;
+  padding-top: 20px;
+  z-index: 1000;
+}
+
+/* Override any potential background colors */
+
+.navbar::before,
+.navbar::after {
+  display: none !important;
+}
+
+/* Ensure the container is also transparent */
+.navbar-container {
+  background-color: transparent !important;
+}
+
+.navbar-container {
+  max-width: 1304px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 148px;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  outline: none;
+}
+
+.logo:focus,
+.logo:active {
+  outline: none;
+  border: none;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav a {
+  color: #383838;
+  text-decoration: none;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.09px;
+  transition: color 0.3s ease;
+  outline: none;
+  border: none;
+}
+
+.nav a:hover {
+  color: #0794E2;
+}
+
+.nav a:focus,
+.nav a:active {
+  outline: none;
+  border: none;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+  outline: none;
+}
+
+.menu-toggle:focus,
+.menu-toggle:active {
+  outline: none;
+  border: none;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  justify-content: center;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #383838 !important;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.book-call-btn-mobile {
+  display: none;
+}
+
+.book-call-btn {
+  width: 160px;
+  height: 50px;
+  background: #0794E2; /* Blue background */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.09px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.book-call-btn:hover {
+  background: #0678b3;
+}
+
+.book-call-btn:focus,
+.book-call-btn:active {
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+
+  .book-call-btn {
+    width: 140px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 769px) {
+  .navbar {
+    height: 70px;
+    padding-top: 20px;
+    z-index: 1002;
+  }
+
+  .navbar-container {
+    height: 50px;
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  .logo {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    z-index: 1002;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 1002;
+  }
+
+  .book-call-btn {
+    display: none;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background: transparent;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 1rem 2rem;
+    gap: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1001;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .nav.nav-open {
+    transform: translateX(0);
+    background: white;
+    z-index: 1001;
+    font-family: 'KunKun_Bold', sans-serif;
+  }
+
+  .nav a:not(.book-call-btn-mobile) {
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+    color:  #E7A4F7; /* This color is purple, not blue for nav links on mobile */
+    outline: none;
+  }
+
+  .nav a:not(.book-call-btn-mobile):focus,
+  .nav a:not(.book-call-btn-mobile):active {
+    outline: none;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav a:not(.book-call-btn-mobile):last-of-type {
+    border-bottom: none;
+  }
+
+  .book-call-btn-mobile {
+    display: flex;
+    width: calc(100% - 2rem);
+    max-width: 300px;
+    height: 50px;
+    background: #0794E2; /* Blue background for mobile button */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Aeonik', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.09px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+  }
+
+  .book-call-btn-mobile:hover {
+    background: #0678b3;
+  }
+
+  .book-call-btn-mobile:focus,
+  .book-call-btn-mobile:active {
+    outline: none;
+    border: none;
+  }
+}
