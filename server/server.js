@@ -58,9 +58,8 @@ You have a new enquiry submission:
 Full Name: ${fullName}
 Email: ${email}
 Phone: ${phone}
-Service Type: ${serviceType} ${
-        serviceType === "other" ? `- ${otherService}` : ""
-      }
+Service Type: ${serviceType} ${serviceType === "other" ? `- ${otherService}` : ""
+        }
 Brand Description: ${brandDescription}
 Deadline: ${deadline} ${deadline === "yes" ? `- ${deadlineDate}` : ""}
 Brand Name: ${brandName}
@@ -117,11 +116,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/dist")));
-  app.get("/*", (req, res) =>
-    res.sendFile(path.join(__dirname, "../client/dist/index.html"))
-  );
+  app.get('(.*)', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+  });
 }
-
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
